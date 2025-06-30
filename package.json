@@ -1,0 +1,21 @@
+{
+  "name": "assign3-css-precomiler",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "goservergo": "lite-server --baseDir=\"public\"",
+    "assignment": "sass --watch src/scss/stylesheet.scss:public/assets/css/style.css",
+    "start": "concurrently \"npm run goservergo\" \"npm run assignment\""
+  },
+
+  "keywords": [],
+  "author": "Hans Wang",
+  "license": "private",
+  "private": "true",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.2.0",
+    "lite-server": "^2.6.1",
+    "sass": "^1.89.2"
+  }
+}
